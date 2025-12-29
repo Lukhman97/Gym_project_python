@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'gymcore.wsgi.application'
 DATABASES={
     'default':{
         'ENGINE':'django.db.backends.mysql',
-        'NAME':'new_datas',
+        'NAME':'Gym_project',
         'USER':'root',
         'PASSWORD':'lukhman786',
         'HOST':'127.0.0.1',
