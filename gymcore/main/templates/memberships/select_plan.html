@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+<h1>Select Plan</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Select Plan</button>
+</form>
+{% endblock %}
