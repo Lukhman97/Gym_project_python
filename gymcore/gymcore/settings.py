@@ -80,16 +80,16 @@ WSGI_APPLICATION = 'gymcore.wsgi.application'
 
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+# BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-PEM_CONTENT = os.getenv("PEM_CONT")
+# PEM_CONTENT = os.getenv("PEM_CONT")
 
-CERT_PATH = os.path.join(BASE_DIR, "aiven_cert.pem")
+# CERT_PATH = os.path.join(BASE_DIR, "aiven_ca.pem")
 
-if PEM_CONTENT:
-    with open(CERT_PATH, "w") as f:
-        f.write(PEM_CONTENT)
+# if PEM_CONTENT:
+#     with open(CERT_PATH, "w") as f:
+#         f.write(PEM_CONTENT)
 
 
 # DATABASES={
