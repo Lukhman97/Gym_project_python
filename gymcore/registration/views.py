@@ -26,8 +26,8 @@ def register(request):
 
 @login_required    
 def members_list(request):
-    members=Registers.objects.all()
-    return render(request,'member_list.html',{'members':members})
+    members = Registers.objects.all()
+    return render(request, 'registration/member_list.html', {'members': members})
 
 def edit_member(request, member_id):
     member = Registers.objects.get(id=member_id) 
